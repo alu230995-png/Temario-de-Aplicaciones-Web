@@ -190,3 +190,65 @@ SELECT nombre, correo FROM usuarios WHERE activo = 1;
 ```
 
 ---
+
+# 4. Control de Versiones
+
+El control de versiones es esencial en el desarrollo web moderno, ya que permite gestionar los cambios en el código fuente y facilita la colaboración entre desarrolladores.
+
+## Git y GitHub
+
+### Git
+
+- **Git** es un sistema de control de versiones distribuido.
+- Permite llevar un historial completo de los cambios realizados en los archivos de un proyecto.
+- Facilita la colaboración, recuperación de versiones anteriores y manejo de distintas líneas de desarrollo (ramas).
+- Comandos básicos:
+  - `git init`: Inicializa un repositorio.
+  - `git add`: Añade archivos al área de preparación (staging area).
+  - `git commit`: Guarda los cambios en el historial.
+  - `git status`: Muestra el estado del repositorio.
+  - `git log`: Muestra el historial de commits.
+  - `git clone`: Clona un repositorio existente.
+  - `git pull`: Descarga cambios desde el repositorio remoto.
+  - `git push`: Sube cambios al repositorio remoto.
+
+### GitHub
+
+- **GitHub** es una plataforma en línea que aloja repositorios Git y facilita la colaboración.
+- Permite compartir proyectos, colaborar mediante pull requests, gestionar incidencias, hacer revisiones de código, y más.
+- Proporciona herramientas para la integración continua, despliegue y documentación.
+
+## Flujo de Trabajo con Ramas
+
+Trabajar con ramas es una práctica estándar para el trabajo colaborativo y el desarrollo de nuevas características sin afectar la rama principal (main/master).
+
+### Branching (Creación de ramas)
+
+- Se crean ramas para desarrollar nuevas funcionalidades, arreglar errores o experimentar.
+- Ejemplo:  
+  ```bash
+  git checkout -b nueva-funcionalidad
+  ```
+
+### Merge (Fusión de ramas)
+
+- Una vez completado el trabajo en una rama, sus cambios se pueden fusionar con la rama principal.
+- Ejemplo:  
+  ```bash
+  git checkout main
+  git merge nueva-funcionalidad
+  ```
+
+### Pull Requests
+
+- En GitHub, los **pull requests (PR)** son solicitudes para fusionar cambios de una rama a otra.
+- Permiten la revisión de código, discusión y pruebas antes de integrar los cambios.
+- Flujo típico:
+  1. Crear una rama.
+  2. Realizar cambios y subirlos (push).
+  3. Abrir un pull request en GitHub.
+  4. Revisar, discutir y aprobar los cambios.
+  5. Fusionar (merge) la PR a la rama principal.
+
+---
+
