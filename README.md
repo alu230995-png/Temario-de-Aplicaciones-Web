@@ -52,6 +52,7 @@ A lo largo de esta evolución, han surgido varios tipos de aplicaciones web:
   - Funcionan offline, pueden instalarse en el dispositivo y enviar notificaciones.
   - Utilizan tecnologías como Service Workers, manifest.json.
   - Ejemplo: Twitter Lite, Starbucks PWA.
+
 ---
 # 2. Arquitectura de Aplicaciones Web
 
@@ -68,8 +69,6 @@ La **arquitectura cliente-servidor** es la base del desarrollo web moderno. Cons
   - Procesa datos, ejecuta lógica de negocio y envía respuestas (como páginas HTML, datos JSON).
 
 **Ejemplo:** Cuando accedes a www.ejemplo.com desde tu navegador (cliente), el servidor web responde enviando los archivos necesarios para visualizar la página.
-
----
 
 ## Arquitectura de Tres Capas
 
@@ -92,8 +91,6 @@ La **arquitectura de tres capas** (Three-tier architecture) es un modelo que sep
 - Separación de responsabilidades.
 - Escalabilidad y facilidad de mantenimiento.
 
----
-
 ## REST y API-first Design
 
 ### REST (Representational State Transfer)
@@ -111,4 +108,85 @@ La **arquitectura de tres capas** (Three-tier architecture) es un modelo que sep
 - Estrategia de desarrollo donde se diseña la **API** antes de implementar la lógica de la aplicación.
 - Permite definir contratos claros entre el frontend y el backend mediante especificaciones (OpenAPI/Swagger).
 - Facilita el trabajo paralelo entre equipos, mejora la documentación y la mantenibilidad.
+---
+# 3. Lenguajes y Tecnologías Fundamentales
 
+El desarrollo web se apoya en varios lenguajes y tecnologías esenciales. Entre los más importantes destacan:
+
+## HTML (HyperText Markup Language)
+
+- Es el lenguaje de marcado principal para la creación de páginas web.
+- Define la estructura y el contenido de la web utilizando etiquetas (`<html>`, `<head>`, `<body>`, `<h1>`, `<p>`, etc.).
+- Todos los sitios web usan HTML como base.
+
+**Ejemplo:**
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi Página Web</title>
+  </head>
+  <body>
+    <h1>¡Hola, mundo!</h1>
+    <p>Bienvenido a mi sitio web.</p>
+  </body>
+</html>
+```
+
+## CSS (Cascading Style Sheets)
+
+- Es el lenguaje de estilos que da formato y diseño a los documentos HTML.
+- Permite separar la estructura (HTML) de la presentación (CSS).
+- Controla colores, fuentes, márgenes, disposición, animaciones, etc.
+
+**Ejemplo:**
+```css
+body {
+  background-color: #f0f0f0;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #007bff;
+}
+```
+
+## JavaScript
+
+- Lenguaje de programación principal en el lado del cliente (frontend).
+- Permite crear páginas web interactivas, validar formularios, manipular el DOM, realizar peticiones asíncronas (AJAX), etc.
+- También se utiliza en el backend mediante Node.js.
+
+**Ejemplo:**
+```javascript
+document.getElementById('btnSaludar').onclick = function() {
+  alert('¡Hola desde JavaScript!');
+};
+```
+
+## PHP
+
+- Lenguaje de programación del lado del servidor, ampliamente usado para crear aplicaciones web dinámicas.
+- Permite interactuar con bases de datos, gestionar sesiones, enviar correos, etc.
+- Es base de muchos CMS populares como WordPress, Joomla y Drupal.
+
+**Ejemplo:**
+```php
+<?php
+  echo "¡Hola desde PHP!";
+?>
+```
+
+## MySQL
+
+- Sistema de gestión de bases de datos relacional (RDBMS) muy popular en el desarrollo web.
+- Utiliza el lenguaje SQL para crear, leer, actualizar y eliminar datos de la base de datos.
+- Se integra fácilmente con PHP y otras tecnologías backend.
+
+**Ejemplo:**
+```sql
+SELECT nombre, correo FROM usuarios WHERE activo = 1;
+```
+
+---
