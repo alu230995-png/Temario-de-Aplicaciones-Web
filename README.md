@@ -6,7 +6,9 @@
 El desarrollo web ha experimentado una evolución vertiginosa desde sus inicios en la década de los 90:
 
 - **Década de 1990:**  
-  - *1990:* Tim Berners-Lee crea la World Wide Web. <img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/450a8a7e-c98e-48cc-9b81-93307a2a76f8" />
+  - *1990:* Tim Berners-Lee crea la World Wide Web. 
+<img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/450a8a7e-c98e-48cc-9b81-93307a2a76f8" />
+
   - *1993-1995:* Primeros navegadores gráficos (Mosaic, Netscape Navigator).
   - Las páginas web eran estáticas, compuestas principalmente por HTML simple.
 
