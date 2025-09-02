@@ -52,3 +52,63 @@ A lo largo de esta evolución, han surgido varios tipos de aplicaciones web:
   - Funcionan offline, pueden instalarse en el dispositivo y enviar notificaciones.
   - Utilizan tecnologías como Service Workers, manifest.json.
   - Ejemplo: Twitter Lite, Starbucks PWA.
+---
+# 2. Arquitectura de Aplicaciones Web
+
+## Cliente-Servidor
+
+La **arquitectura cliente-servidor** es la base del desarrollo web moderno. Consiste en dos partes principales:
+
+- **Cliente:**  
+  - Es la aplicación o navegador desde donde el usuario interactúa.  
+  - Solicita recursos o servicios al servidor (por ejemplo, cargar una página web).
+
+- **Servidor:**  
+  - Es el sistema que responde a las solicitudes del cliente.  
+  - Procesa datos, ejecuta lógica de negocio y envía respuestas (como páginas HTML, datos JSON).
+
+**Ejemplo:** Cuando accedes a www.ejemplo.com desde tu navegador (cliente), el servidor web responde enviando los archivos necesarios para visualizar la página.
+
+---
+
+## Arquitectura de Tres Capas
+
+La **arquitectura de tres capas** (Three-tier architecture) es un modelo que separa una aplicación en tres niveles independientes:
+
+1. **Capa de Presentación (Frontend):**
+   - Interfaz gráfica que ve el usuario.
+   - Normalmente compuesta por HTML, CSS, JavaScript, y frameworks como React, Angular, Vue.js.
+
+2. **Capa de Lógica (Backend o lógica de negocio):**
+   - Procesa la lógica de la aplicación.
+   - Puede estar desarrollada en Node.js, Python, Java, etc.
+   - Gestiona reglas de negocio, autenticación, autorización, etc.
+
+3. **Capa de Datos (Base de datos):**
+   - Donde se almacenan y gestionan los datos.
+   - Uso de sistemas como MySQL, PostgreSQL, MongoDB, etc.
+
+**Ventajas:**
+- Separación de responsabilidades.
+- Escalabilidad y facilidad de mantenimiento.
+
+---
+
+## REST y API-first Design
+
+### REST (Representational State Transfer)
+
+- Es un estilo de arquitectura para diseñar servicios web.
+- Utiliza HTTP y sus métodos (GET, POST, PUT, DELETE) para realizar operaciones sobre recursos identificados mediante URLs.
+- Las respuestas suelen ser en formato JSON o XML.
+
+**Ejemplo de endpoints REST:**
+- `GET /usuarios` — obtiene todos los usuarios.
+- `POST /usuarios` — crea un nuevo usuario.
+
+### API-first Design
+
+- Estrategia de desarrollo donde se diseña la **API** antes de implementar la lógica de la aplicación.
+- Permite definir contratos claros entre el frontend y el backend mediante especificaciones (OpenAPI/Swagger).
+- Facilita el trabajo paralelo entre equipos, mejora la documentación y la mantenibilidad.
+
